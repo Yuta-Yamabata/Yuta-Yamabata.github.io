@@ -118,7 +118,7 @@ h1, h2, h3, h4 { line-height: 1.18; }
 .video-enhanced .video-start:focus-visible { outline: 3px solid var(--yellow); outline-offset: -5px; }
 .video-enhanced .video-start > span:last-child { display: none; }
 .video-start-icon { display: grid; place-items: center; width: 46px; height: 46px; border: 1.5px solid rgba(255,255,255,.9); border-radius: 50%; background: rgba(15,44,62,.82); box-shadow: 0 3px 12px rgba(0,0,0,.2); color: white; }
-.video-start-icon::before { content: ""; width: 0; height: 0; margin-left: 4px; border-top: 9px solid transparent; border-bottom: 9px solid transparent; border-left: 15px solid currentColor; }
+.video-start-icon svg { display: block; width: 20px; height: 20px; transform: translateX(1px); }
 
 .results-section { background: white; }
 .result-block { padding: 16px 0 38px; }
