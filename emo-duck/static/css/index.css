@@ -37,7 +37,7 @@ section[id] { scroll-margin-top: 5rem; }
 
 .hero { position: relative; overflow: hidden; background: linear-gradient(180deg, #f8fcfe 0%, #ffffff 100%); border-bottom: 1px solid var(--line); }
 .hero-glow { position: absolute; width: 600px; height: 600px; top: -430px; left: 50%; transform: translateX(-50%); border-radius: 50%; background: radial-gradient(circle, rgba(0,127,196,.14), rgba(0,127,196,0) 68%); pointer-events: none; }
-.hero-inner { position: relative; padding: clamp(65px, 8vw, 106px) 0 75px; text-align: center; }
+.hero-inner { position: relative; padding: clamp(54px, 6vw, 82px) 0 62px; text-align: center; }
 .venue-badge { display: inline-flex; align-items: center; gap: 9px; max-width: 100%; margin: 0 auto 22px; padding: 9px 15px; border: 1px solid #e9d07d; border-radius: 999px; background: #fff8df; color: #695416; font-size: .77rem; font-weight: 700; letter-spacing: .015em; line-height: 1.4; }
 .badge-dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--yellow); }
 .section-index { color: var(--blue); font-size: .77rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
@@ -63,7 +63,7 @@ h1, h2, h3, h4 { line-height: 1.18; }
 .action-pill small { margin-left: auto; color: #607380; font-size: .68rem; font-weight: 700; }
 .pill-icon { font-size: .85rem; }
 .unavailable { cursor: default; }
-.hero-motion-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 46px auto 0; }
+.hero-motion-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 36px auto 0; }
 .hero-motion { position: relative; overflow: hidden; aspect-ratio: 119 / 67; border-radius: 10px; background: #e3e9ec; }
 .hero-motion video { width: 100%; height: 100%; object-fit: cover; }
 .hero-motion-label { position: absolute; top: 0; left: 0; z-index: 1; padding: 7px 16px 8px 12px; border-left: 5px solid var(--emotion); background: rgba(255,255,255,.96); color: var(--ink); font-size: clamp(1rem, 1.8vw, 1.25rem); font-weight: 750; line-height: 1.2; }
@@ -73,8 +73,8 @@ h1, h2, h3, h4 { line-height: 1.18; }
 .hero-motion.emotion-neutral .hero-motion-label { color: #536c74; }
 .hero-motion.emotion-sad .hero-motion-label { color: #087a61; }
 
-.section { padding: clamp(68px, 8vw, 108px) 0; }
-.section-heading { margin-bottom: 36px; }
+.section { padding: clamp(54px, 6vw, 82px) 0; }
+.section-heading { margin-bottom: 30px; }
 .section-heading.centered { max-width: 785px; margin-inline: auto; text-align: center; }
 .section-heading h2 { margin: 11px 0 15px; font-size: clamp(1.75rem, 3.4vw, 2.75rem); letter-spacing: -.038em; }
 .section-heading p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.8; text-align: left; }
@@ -121,9 +121,9 @@ h1, h2, h3, h4 { line-height: 1.18; }
 .video-start-icon { display: grid; place-items: center; width: 50px; height: 50px; padding-left: 2px; border: 2px solid rgba(255,255,255,.85); border-radius: 50%; background: rgba(15,44,62,.78); box-shadow: 0 2px 12px rgba(0,0,0,.2); color: white; font-size: 1.1rem; }
 
 .results-section { background: white; }
-.result-block { padding: 20px 0 48px; }
-.result-block + .result-block { border-top: 1px solid var(--line); padding-top: 48px; }
-.result-copy { max-width: 785px; margin: 0 auto 28px; text-align: left; }
+.result-block { padding: 16px 0 38px; }
+.result-block + .result-block { border-top: 1px solid var(--line); padding-top: 38px; }
+.result-copy { max-width: 785px; margin: 0 auto 24px; text-align: left; }
 .result-copy h3 { margin: 0 0 15px; font-size: clamp(1.5rem, 2.5vw, 2.14rem); letter-spacing: -.035em; }
 .result-copy p { margin: 0; color: var(--muted); line-height: 1.8; }
 .chart-figure { box-shadow: none; }
@@ -148,12 +148,12 @@ h1, h2, h3, h4 { line-height: 1.18; }
   .page-width, .page-width.narrow { width: min(100% - 32px, 1120px); }
   .header-inner { min-height: 58px; }
   .home-link { padding-left: 12px; font-size: .73rem; }
-  .hero-inner { padding-block: 65px 62px; }
+  .hero-inner { padding-block: 52px 50px; }
   .venue-badge { border-radius: 14px; text-align: left; }
   .hero h1 { font-size: clamp(1.9rem, 7.8vw, 2.2rem); }
   .affiliations { flex-direction: column; gap: 0; }
   .partner-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 17px 14px; padding: 18px 14px; }
-  .hero-motion-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 34px; }
+  .hero-motion-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 28px; }
   .motion-grid { grid-template-columns: 1fr; gap: 18px; }
   .emotion-card { padding: 19px 17px 22px; }
   .paper-figure figcaption { padding: 11px 13px; }
