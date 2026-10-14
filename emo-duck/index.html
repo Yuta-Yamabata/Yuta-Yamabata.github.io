@@ -52,6 +52,12 @@
           <span class="action-pill unavailable" aria-disabled="true"><span class="pill-icon" aria-hidden="true">↗</span> Preprint <small>Coming soon</small></span>
           <span class="action-pill unavailable" aria-disabled="true"><span class="pill-icon" aria-hidden="true">▶</span> Video <small>Coming soon</small></span>
         </div>
+        <div class="hero-motion-grid" role="group" aria-label="Physical robot motions by emotion">
+          <div class="hero-motion emotion-angry"><video autoplay muted loop playsinline preload="metadata" poster="./static/images/video-posters/physical_angry.jpg" src="./static/videos/physical_angry.mp4" aria-label="Angry physical robot motion"></video><span class="hero-motion-label" aria-hidden="true">Angry</span></div>
+          <div class="hero-motion emotion-happy"><video autoplay muted loop playsinline preload="metadata" poster="./static/images/video-posters/physical_happy.jpg" src="./static/videos/physical_happy.mp4" aria-label="Happy physical robot motion"></video><span class="hero-motion-label" aria-hidden="true">Happy</span></div>
+          <div class="hero-motion emotion-neutral"><video autoplay muted loop playsinline preload="metadata" poster="./static/images/video-posters/physical_neutral.jpg" src="./static/videos/physical_neutral.mp4" aria-label="Neutral physical robot motion"></video><span class="hero-motion-label" aria-hidden="true">Neutral</span></div>
+          <div class="hero-motion emotion-sad"><video autoplay muted loop playsinline preload="metadata" poster="./static/images/video-posters/physical_sad.jpg" src="./static/videos/physical_sad.mp4" aria-label="Sad physical robot motion"></video><span class="hero-motion-label" aria-hidden="true">Sad</span></div>
+        </div>
       </div>
     </section>
 
@@ -68,7 +74,7 @@
       <div class="page-width narrow">
         <div class="section-heading centered">
           <h2 id="video-title">Video Overview</h2>
-          <p>A short project video will be available here after its YouTube release.</p>
+          <!-- <p>A short project video will be available here after its YouTube release.</p> -->
         </div>
         <!-- Replace this placeholder with a YouTube iframe when the video URL is available. -->
         <div class="video-placeholder" role="status" aria-label="Project video coming soon">
@@ -82,7 +88,7 @@
     <section class="section overview-section" id="overview" aria-labelledby="overview-title">
       <div class="page-width">
         <div class="section-heading centered">
-          <span class="section-index">OVERVIEW</span>
+          <!-- <span class="section-index">OVERVIEW</span> -->
           <h2 id="overview-title">Conceptual Overview</h2>
           <p>We explicitly preserve three gait features that are associated with perceived expressivity and transferable to the duck-like robot: head orientation, forward speed, and gait period.</p>
         </div>
@@ -98,7 +104,7 @@
     <section class="section approach-section" id="approach" aria-labelledby="approach-title">
       <div class="page-width">
         <div class="section-heading centered">
-          <span class="section-index">APPROACH</span>
+          <!-- <span class="section-index">APPROACH</span> -->
           <h2 id="approach-title">Proposed Framework</h2>
           <p>A walking pattern generator and inverse kinematics create reference motions from the human gait cues. For each emotion, a separate reinforcement learning policy is trained on its reference set with the same reward function, enabling stable execution on the physical robot.</p>
         </div>
@@ -116,45 +122,45 @@
     <section class="section motions-section" id="motions" aria-labelledby="motions-title">
       <div class="page-width">
         <div class="section-heading centered">
-          <span class="section-index">MOTIONS</span>
+          <!-- <span class="section-index">MOTIONS</span> -->
           <h2 id="motions-title">Human Source and Generated Robot Motions</h2>
           <p>Compare the human source gait with generated motions in simulation and on the physical robot for each emotion. Select a video to play it.</p>
         </div>
 
         <div class="emotion-list">
           <article class="emotion-card emotion-angry" aria-labelledby="angry-title">
-            <div class="emotion-heading"><span class="emotion-number">01</span><h3 id="angry-title">Angry</h3><span class="emotion-line" aria-hidden="true"></span></div>
+            <div class="emotion-heading"><span class="emotion-number"></span><h3 id="angry-title">Angry</h3><span class="emotion-line" aria-hidden="true"></span></div>
             <div class="motion-grid">
-              <div class="motion-item motion-four-three"><h4>Human</h4><div class="video-shell"><video controls preload="none" playsinline src="./static/videos/human_angry.mp4" aria-label="Angry human gait"></video><button class="video-start" type="button" aria-label="Play angry human gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
-              <div class="motion-item motion-four-three"><h4>Simulation</h4><div class="video-shell"><video controls preload="none" playsinline src="./static/videos/sim_angry.mp4" aria-label="Angry simulated robot gait"></video><button class="video-start" type="button" aria-label="Play angry simulated robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
-              <div class="motion-item"><h4>Physical robot</h4><div class="video-shell"><video controls preload="none" playsinline src="./static/videos/physical_angry.mp4" aria-label="Angry physical robot gait"></video><button class="video-start" type="button" aria-label="Play angry physical robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
+              <div class="motion-item motion-four-three"><h4>Human</h4><div class="video-shell"><video controls preload="none" playsinline poster="./static/images/video-posters/human_angry.jpg" src="./static/videos/human_angry.mp4" aria-label="Angry human gait"></video><button class="video-start" type="button" aria-label="Play angry human gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
+              <div class="motion-item motion-simulation"><h4>Simulation</h4><div class="video-shell"><video controls preload="none" playsinline poster="./static/images/video-posters/sim_angry.jpg" src="./static/videos/sim_angry.mp4" aria-label="Angry simulated robot gait"></video><button class="video-start" type="button" aria-label="Play angry simulated robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
+              <div class="motion-item"><h4>Physical robot</h4><div class="video-shell"><video controls preload="none" playsinline poster="./static/images/video-posters/physical_angry.jpg" src="./static/videos/physical_angry.mp4" aria-label="Angry physical robot gait"></video><button class="video-start" type="button" aria-label="Play angry physical robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
             </div>
           </article>
 
           <article class="emotion-card emotion-happy" aria-labelledby="happy-title">
-            <div class="emotion-heading"><span class="emotion-number">02</span><h3 id="happy-title">Happy</h3><span class="emotion-line" aria-hidden="true"></span></div>
+            <div class="emotion-heading"><span class="emotion-number"></span><h3 id="happy-title">Happy</h3><span class="emotion-line" aria-hidden="true"></span></div>
             <div class="motion-grid">
-              <div class="motion-item motion-four-three"><h4>Human</h4><div class="video-shell"><video controls preload="none" playsinline src="./static/videos/human_happy.mp4" aria-label="Happy human gait"></video><button class="video-start" type="button" aria-label="Play happy human gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
-              <div class="motion-item motion-four-three"><h4>Simulation</h4><div class="video-shell"><video controls preload="none" playsinline src="./static/videos/sim_happy.mp4" aria-label="Happy simulated robot gait"></video><button class="video-start" type="button" aria-label="Play happy simulated robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
-              <div class="motion-item"><h4>Physical robot</h4><div class="video-shell"><video controls preload="none" playsinline src="./static/videos/physical_happy.mp4" aria-label="Happy physical robot gait"></video><button class="video-start" type="button" aria-label="Play happy physical robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
+              <div class="motion-item motion-four-three"><h4>Human</h4><div class="video-shell"><video controls preload="none" playsinline poster="./static/images/video-posters/human_happy.jpg" src="./static/videos/human_happy.mp4" aria-label="Happy human gait"></video><button class="video-start" type="button" aria-label="Play happy human gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
+              <div class="motion-item motion-simulation"><h4>Simulation</h4><div class="video-shell"><video controls preload="none" playsinline poster="./static/images/video-posters/sim_happy.jpg" src="./static/videos/sim_happy.mp4" aria-label="Happy simulated robot gait"></video><button class="video-start" type="button" aria-label="Play happy simulated robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
+              <div class="motion-item"><h4>Physical robot</h4><div class="video-shell"><video controls preload="none" playsinline poster="./static/images/video-posters/physical_happy.jpg" src="./static/videos/physical_happy.mp4" aria-label="Happy physical robot gait"></video><button class="video-start" type="button" aria-label="Play happy physical robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
             </div>
           </article>
 
           <article class="emotion-card emotion-neutral" aria-labelledby="neutral-title">
-            <div class="emotion-heading"><span class="emotion-number">03</span><h3 id="neutral-title">Neutral</h3><span class="emotion-line" aria-hidden="true"></span></div>
+            <div class="emotion-heading"><span class="emotion-number"></span><h3 id="neutral-title">Neutral</h3><span class="emotion-line" aria-hidden="true"></span></div>
             <div class="motion-grid">
-              <div class="motion-item motion-four-three"><h4>Human</h4><div class="video-shell"><video controls preload="none" playsinline src="./static/videos/human_neutral.mp4" aria-label="Neutral human gait"></video><button class="video-start" type="button" aria-label="Play neutral human gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
-              <div class="motion-item motion-four-three"><h4>Simulation</h4><div class="video-shell"><video controls preload="none" playsinline src="./static/videos/sim_neutral.mp4" aria-label="Neutral simulated robot gait"></video><button class="video-start" type="button" aria-label="Play neutral simulated robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
-              <div class="motion-item"><h4>Physical robot</h4><div class="video-shell"><video controls preload="none" playsinline src="./static/videos/physical_neutral.mp4" aria-label="Neutral physical robot gait"></video><button class="video-start" type="button" aria-label="Play neutral physical robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
+              <div class="motion-item motion-four-three"><h4>Human</h4><div class="video-shell"><video controls preload="none" playsinline poster="./static/images/video-posters/human_neutral.jpg" src="./static/videos/human_neutral.mp4" aria-label="Neutral human gait"></video><button class="video-start" type="button" aria-label="Play neutral human gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
+              <div class="motion-item motion-simulation"><h4>Simulation</h4><div class="video-shell"><video controls preload="none" playsinline poster="./static/images/video-posters/sim_neutral.jpg" src="./static/videos/sim_neutral.mp4" aria-label="Neutral simulated robot gait"></video><button class="video-start" type="button" aria-label="Play neutral simulated robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
+              <div class="motion-item"><h4>Physical robot</h4><div class="video-shell"><video controls preload="none" playsinline poster="./static/images/video-posters/physical_neutral.jpg" src="./static/videos/physical_neutral.mp4" aria-label="Neutral physical robot gait"></video><button class="video-start" type="button" aria-label="Play neutral physical robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
             </div>
           </article>
 
           <article class="emotion-card emotion-sad" aria-labelledby="sad-title">
-            <div class="emotion-heading"><span class="emotion-number">04</span><h3 id="sad-title">Sad</h3><span class="emotion-line" aria-hidden="true"></span></div>
+            <div class="emotion-heading"><span class="emotion-number"></span><h3 id="sad-title">Sad</h3><span class="emotion-line" aria-hidden="true"></span></div>
             <div class="motion-grid">
-              <div class="motion-item motion-four-three"><h4>Human</h4><div class="video-shell"><video controls preload="none" playsinline src="./static/videos/human_sad.mp4" aria-label="Sad human gait"></video><button class="video-start" type="button" aria-label="Play sad human gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
-              <div class="motion-item motion-four-three"><h4>Simulation</h4><div class="video-shell"><video controls preload="none" playsinline src="./static/videos/sim_sad.mp4" aria-label="Sad simulated robot gait"></video><button class="video-start" type="button" aria-label="Play sad simulated robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
-              <div class="motion-item"><h4>Physical robot</h4><div class="video-shell"><video controls preload="none" playsinline src="./static/videos/physical_sad.mp4" aria-label="Sad physical robot gait"></video><button class="video-start" type="button" aria-label="Play sad physical robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
+              <div class="motion-item motion-four-three"><h4>Human</h4><div class="video-shell"><video controls preload="none" playsinline poster="./static/images/video-posters/human_sad.jpg" src="./static/videos/human_sad.mp4" aria-label="Sad human gait"></video><button class="video-start" type="button" aria-label="Play sad human gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
+              <div class="motion-item motion-simulation"><h4>Simulation</h4><div class="video-shell"><video controls preload="none" playsinline poster="./static/images/video-posters/sim_sad.jpg" src="./static/videos/sim_sad.mp4" aria-label="Sad simulated robot gait"></video><button class="video-start" type="button" aria-label="Play sad simulated robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
+              <div class="motion-item"><h4>Physical robot</h4><div class="video-shell"><video controls preload="none" playsinline poster="./static/images/video-posters/physical_sad.jpg" src="./static/videos/physical_sad.mp4" aria-label="Sad physical robot gait"></video><button class="video-start" type="button" aria-label="Play sad physical robot gait"><span class="video-start-icon" aria-hidden="true">▶</span><span>Play video</span></button></div></div>
             </div>
           </article>
         </div>
