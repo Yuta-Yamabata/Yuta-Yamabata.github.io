@@ -6,7 +6,7 @@
   <meta name="description" content="Emotionally expressive locomotion on a low-cost duck-like bipedal robot guided by human gait cues.">
   <meta name="theme-color" content="#007FC4">
   <title>Emotionally Expressive Locomotion on a Low-Cost Bipedal Robot Guided by Human Gait Cues</title>
-  <link rel="stylesheet" href="./static/css/index.css?v=20261015-1">
+  <link rel="stylesheet" href="./static/css/index.css?v=20261017-4">
   <script src="./static/js/video.js" defer></script>
 </head>
 <body>
@@ -33,12 +33,15 @@
     <section class="hero" id="top" aria-labelledby="page-title">
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="page-width hero-inner">
-        <p class="venue-badge"><span class="badge-dot" aria-hidden="true"></span> Accepted at the 2026 IEEE-RAS 25th International Conference on Humanoid Robots (Humanoids)</p>
+        <div class="venue-row">
+          <p class="venue-badge"><span class="badge-dot" aria-hidden="true"></span> Accepted at the 2026 IEEE-RAS 25th International Conference on Humanoid Robots (Humanoids)</p>
+          <a class="conference-logo" href="https://2026.ieee-humanoids.org/" aria-label="Humanoids 2026 conference website"><img src="./static/images/humanoids-2026.webp" alt="Humanoids 2026" width="768" height="193"></a>
+        </div>
         <h1 id="page-title">Emotionally Expressive Locomotion on a <span class="no-break">Low-Cost</span> Bipedal Robot Guided by Human Gait Cues</h1>
         <div class="authors" aria-label="Authors">
           <a href="https://yuta-yamabata.github.io/">Yuta Yamabata</a><sup>1</sup><span class="author-comma">,</span>
           <a href="https://kenyamori737.github.io/">Kenya Mori</a><sup>2</sup><span class="author-comma">,</span>
-          <a href="https://publish.illinois.edu/kimlab2020/kimlab-members/">Joohyung Kim</a><sup>3</sup><span class="author-comma">,</span>
+          <a href="https://publish.illinois.edu/kimlab2020/kimlab-members/">Joohyung Kim</a><sup>3</sup><span class="author-comma">, and </span>
           <a href="https://www.gvlab.jp/gv/">Gentiane Venture</a><sup>1</sup>
         </div>
         <p class="affiliations"><span><sup>1</sup> The University of Tokyo</span><span><sup>2</sup> Tokyo University of Science</span><span><sup>3</sup> University of Illinois Urbana-Champaign</span></p>
@@ -49,8 +52,14 @@
           <span class="partner-logo partner-logo-uiuc"><img src="./static/images/affiliations/uiuc.png" alt="University of Illinois Urbana-Champaign" width="579" height="150"></span>
         </div>
         <div class="hero-actions" role="group" aria-label="Research materials availability">
-          <span class="action-pill unavailable"><span class="action-name">Preprint</span><small>Coming soon</small></span>
-          <span class="action-pill unavailable"><span class="action-name">Video</span><small>Coming soon</small></span>
+          <span class="action-pill unavailable">
+            <svg class="action-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false"><path d="M8 3.5h13l7 7V31a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V5.5a2 2 0 0 1 2-2Z" fill="#fff" stroke="#007FC4" stroke-width="2"/><path d="M21 3.5v7h7" fill="none" stroke="#007FC4" stroke-width="2"/><rect x="4" y="18" width="28" height="11" rx="2" fill="#EC6F45"/><text x="18" y="26.3" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="8" font-weight="700">PDF</text></svg>
+            <span class="action-copy"><span class="action-name">Preprint</span><small>Coming soon</small></span>
+          </span>
+          <a class="action-pill action-link" href="https://youtu.be/6weia5VP1dY" target="_blank" rel="noopener" aria-label="Watch the video on YouTube (opens in a new tab)">
+            <svg class="action-icon" viewBox="0 0 36 36" aria-hidden="true" focusable="false"><rect x="2" y="7" width="32" height="22" rx="7" fill="#FF0033"/><path d="m15 12 10 6-10 6Z" fill="#fff"/></svg>
+            <span class="action-copy"><span class="action-name">Video</span></span>
+          </a>
         </div>
         <div class="hero-motion-grid" role="group" aria-label="Physical robot motions by emotion">
           <div class="hero-motion emotion-angry"><video autoplay muted loop playsinline preload="metadata" poster="./static/images/video-posters/physical_angry.jpg" src="./static/videos/physical_angry.mp4" aria-label="Angry physical robot motion"></video><span class="hero-motion-label" aria-hidden="true">Angry</span></div>
@@ -74,13 +83,11 @@
       <div class="page-width narrow">
         <div class="section-heading centered">
           <h2 id="video-title">Video Overview</h2>
-          <!-- <p>A short project video will be available here after its YouTube release.</p> -->
         </div>
-        <!-- Replace this placeholder with a YouTube iframe when the video URL is available. -->
-        <div class="video-placeholder" role="status" aria-label="Project video coming soon">
-          <strong>Coming soon</strong>
-          <span>A 1–1.5 minute overview of the project</span>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/6weia5VP1dY?playsinline=1" title="Video overview of Emotionally Expressive Locomotion on a Low-Cost Bipedal Robot Guided by Human Gait Cues" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         </div>
+        <p class="video-external-link"><a href="https://youtu.be/6weia5VP1dY" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></p>
       </div>
     </section>
 
@@ -174,16 +181,30 @@
 
         <div class="result-block">
           <div class="result-copy"><h3>Cue Realization</h3><p>The resulting robot motions preserved the ordering across emotion conditions observed in the human data for gait period and forward speed and realized a distinct pitch cue for sadness.</p></div>
-          <figure class="paper-figure chart-figure extra-wide-figure">
-            <div class="figure-scroll"><a class="figure-image-link" href="./static/images/head_rotation_relative_to_torso_cycle_01%20(1).png" target="_blank" rel="noopener" aria-label="Open the head orientation chart at full size"><img src="./static/images/head_rotation_relative_to_torso_cycle_01%20(1).png" width="3993" height="921" loading="lazy" alt="Robot head roll, pitch, and yaw over a gait cycle for angry, happy, neutral, and sad motions; sadness has a distinct pitch profile."></a></div>
-            <figcaption>Robot head orientation over one gait cycle. The gait cycle is normalized to 0–100%.</figcaption>
-          </figure>
+          <div class="cue-evidence">
+            <div class="cue-table-scroll" role="region" aria-label="Gait period and forward speed comparison" tabindex="0">
+              <table class="cue-table">
+                <caption class="visually-hidden">Human and realized robot gait period and forward speed by emotion</caption>
+                <thead><tr><th scope="col">Measure</th><th scope="col" class="cue-angry">Angry</th><th scope="col" class="cue-happy">Happy</th><th scope="col" class="cue-neutral">Neutral</th><th scope="col" class="cue-sad">Sad</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Human gait period [s]</th><td>0.80</td><td>1.00</td><td>1.13</td><td>1.97</td></tr>
+                  <tr><th scope="row">Human speed [m/s]</th><td>2.24</td><td>1.89</td><td>1.50</td><td>0.54</td></tr>
+                  <tr class="robot-measures"><th scope="row">Realized robot gait period [s]</th><td>0.38</td><td>0.48</td><td>0.58</td><td>0.88</td></tr>
+                  <tr><th scope="row">Realized robot speed [m/s]</th><td>0.15</td><td>0.13</td><td>0.11</td><td>0.04</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <figure class="paper-figure chart-figure pitch-figure">
+              <div class="figure-scroll"><a class="figure-image-link" href="./static/images/Only_pitch.png" target="_blank" rel="noopener" aria-label="Open the robot head pitch chart at full size"><img src="./static/images/Only_pitch.png" width="1568" height="885" loading="lazy" alt="Robot head pitch over a gait cycle for angry, happy, neutral, and sad motions; sadness remains distinctly higher than the other conditions."></a></div>
+              <figcaption>Robot head pitch relative to the torso over one normalized gait cycle (0–100%). Sadness shows a distinct positive pitch offset.</figcaption>
+            </figure>
+          </div>
         </div>
 
         <div class="result-block">
           <div class="result-copy"><h3>Perceptual Results</h3><p>Sadness was robustly preserved and neutral was partially preserved, whereas anger and happiness shifted toward different perceptual neighbors in the video-based user study.</p></div>
           <figure class="paper-figure chart-figure extra-wide-figure">
-            <div class="figure-scroll"><a class="figure-image-link" href="./static/images/confusion_matrices.png" target="_blank" rel="noopener" aria-label="Open the emotion recognition matrices at full size"><img src="./static/images/confusion_matrices.png" width="3597" height="855" loading="lazy" alt="Emotion recognition matrices for physical robot, simulation, and human gait; sadness is clearly recognized in all three, while anger and happiness are frequently confused for robot motion."></a></div>
+            <div class="figure-scroll"><a class="figure-image-link" href="./static/images/confusion_matrices2.png" target="_blank" rel="noopener" aria-label="Open the emotion recognition matrices at full size"><img src="./static/images/confusion_matrices2.png" width="3597" height="855" loading="lazy" alt="Emotion recognition matrices for physical robot, simulation, and human gait; sadness is clearly recognized in all three, while anger and happiness are frequently confused for robot motion."></a></div>
             <figcaption>Confusion matrices for the physical robot, simulated robot, and human gait. Rows denote the intended emotions, columns denote participant responses, and each cell reports the row percentage with the corresponding count in parentheses (N=64 per row). “None” and “IDU” denote “None of the above” and “I don’t understand,” respectively.</figcaption>
           </figure>
         </div>
