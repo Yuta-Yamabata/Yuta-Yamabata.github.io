@@ -3,78 +3,107 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#007FC4">
   <title>Yuta Yamabata</title>
-  <style>
-    body {
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 20px;
-      font-family: sans-serif;
-      line-height: 1.8;
-      color: #222;
-    }
-  </style>
+  <link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>
-  <h1>Yuta Yamabata (山端優太)</h1>
-  <img src="static/images/IMG_7347_sq.jpg" alt="山端悠太とロボットの写真" width="240" height="240">
-  <p>Spatial Production Engineer at teamLab | M.S. in Mechanical Engineering, The University of Tokyo</p>
-  <p>Mail: yamabata.yuta [at] gmail.com</p>
-  <!-- <p><a href="https://github.com/Yuta-Yamabata">GitHub</a></p> -->
-  <p>More information on <a href="https://www.linkedin.com/in/yuta-yamabata/">LinkedIn</a></p>
-  
-  <h2>About</h2>
-  <p>Spatial Production Engineer at <a href="https://www.teamlab.art/">teamLab</a>, designing and developing the technical components behind unique digital art experiences, with a focus on hardware, electrical circuits, and software integration.<br>
-  I received my B.S. degree in Mechanical Engineering from Kyushu University in 2024 under the supervision of Dr. <a href="https://sites.google.com/view/ayato-kanada-ja/home">Ayato Kanada</a>, and my M.S. degree in Mechanical Engineering from The University of Tokyo in 2026 under the supervision of Dr. <a href="https://www.gvlab.jp/gv/">Gentiane Venture</a>. I was also a visiting scholar at the University of Illinois Urbana-Champaign in Fall 2025 under the supervision of Dr. <a href="https://publish.illinois.edu/kimlab2020/kimlab-members/">Joohyung Kim</a> .<br>
-  During my studies, I worked on various areas of real-world Human-Robot Interaction research, including adaptive navigation, expressive motion for manipulators, and full-body motion retargeting for bipedal robots.<br>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="profile-header">
+    <div class="page-width profile">
+      <img class="profile-photo" src="static/images/IMG_7347_sq.jpg" alt="山端優太とロボットの写真" width="240" height="240">
+      <div class="profile-details">
+        <h1>Yuta Yamabata <span class="profile-name-ja">(山端優太)</span></h1>
+        <p class="profile-affiliation">Spatial Production Engineer at teamLab | M.S. in Mechanical Engineering, The University of Tokyo</p>
+        <nav class="social-links" aria-label="Contact and social profiles">
+          <a class="social-link" href="mailto:yamabata.yuta@gmail.com" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="3" fill="currentColor"/><path d="m3 6 9 7 9-7" fill="none" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/yuta-yamabata/" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124ZM7.119 20.452H3.555V9h3.564v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z"/></svg>
+          </a>
+          <a class="social-link" href="https://x.com/yamabata_0221" aria-label="X" title="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.64 7.584H.47l8.6-9.835L0 1.154h7.594l5.243 6.932 6.064-6.933Zm-1.29 19.49h2.039L6.487 3.24H4.3l13.31 17.403Z"/></svg>
+          </a>
+          <!-- GitHub: remove the surrounding comment below to show this icon. -->
+          <!--
+          <a class="social-link" href="https://github.com/Yuta-Yamabata" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .297a12 12 0 0 0-3.793 23.385c.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.776.419-1.305.762-1.605-2.665-.304-5.467-1.334-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.304-.535-1.524.117-3.176 0 0 1.008-.323 3.301 1.23a11.52 11.52 0 0 1 6.006 0c2.291-1.553 3.297-1.23 3.297-1.23.654 1.652.243 2.872.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.608-2.807 5.623-5.479 5.92.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576A12.001 12.001 0 0 0 12 .297Z"/></svg>
+          </a>
+          -->
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-width" id="main">
+  <section class="content-section about-section" aria-labelledby="about-title">
+  <h2 id="about-title">About</h2>
+  <p>Spatial Production Engineer at <a href="https://www.teamlab.art/">teamLab</a>, designing and developing the technical components behind unique digital art experiences, with a focus on hardware, electrical circuits, and software integration.</p>
+  <p>I received my B.S. degree in Mechanical Engineering from Kyushu University in 2024 under the supervision of Dr. <a href="https://sites.google.com/view/ayato-kanada-ja/home">Ayato Kanada</a>, and my M.S. degree in Mechanical Engineering from The University of Tokyo in 2026 under the supervision of Dr. <a href="https://www.gvlab.jp/gv/">Gentiane Venture</a>. I was also a visiting scholar at the University of Illinois Urbana-Champaign in Fall 2025 under the supervision of Dr. <a href="https://publish.illinois.edu/kimlab2020/kimlab-members/">Joohyung Kim</a> .</p>
+  <p>During my studies, I worked on various areas of real-world Human-Robot Interaction research, including adaptive navigation, expressive motion for manipulators, and full-body motion retargeting for bipedal robots.
   <!-- I aspire to create engineering solutions that broaden people’s perspectives and deliver memorable experiences. -->
 </p>
+  </section>
 
-  <h2>Publications</h2>
+  <section class="content-section publications-section" aria-labelledby="publications-title">
+  <h2 id="publications-title">Publications</h2>
   <h3>International Journal Papers & Conference Proceedings (Peer-Reviewed)</h3>
   <ul>
-    <li><strong><u>Yuta Yamabata</strong></u></strong>, Kenya Mori, Joohyung Kim, and Gentiane Venture<br>
-      Emotionally Expressive Locomotion on a Low-Cost Bipedal Robot Guided by Human Gait Cues, in <i>2026 IEEE-RAS 25th International Conference on Humanoid Robots (Humanoids)</i>, 2026<br>
+    <li><u>Yuta Yamabata</u>, Kenya Mori, Joohyung Kim, and Gentiane Venture<br>
+      <strong>Emotionally Expressive Locomotion on a Low-Cost Bipedal Robot Guided by Human Gait Cues </strong><br>
+      in <i>2026 IEEE-RAS 25th International Conference on Humanoid Robots (Humanoids)</i>, 2026<br>
       Acceptance Rate: <strong>38%</strong><br>
       <a href="./emo-duck/">[Project Page]</a> <a href="https://youtu.be/6weia5VP1dY">[Video]</a></li>
-    <li><strong><u>Yuta Yamabata</strong></u></strong> and Gentiane Venture<br>
-      User Perception of Socially-Aware Robot Navigation with Engagement-Based Proxemics, in <i>2025 IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)</i>, 2025<br>
+    <li><u>Yuta Yamabata</u> and Gentiane Venture<br>
+      <strong>User Perception of Socially-Aware Robot Navigation with Engagement-Based Proxemics</strong><br>
+      in <i>2025 IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)</i>, 2025<br>
       Acceptance Rate: <strong>60%</strong><br>
       <a href="https://ieeexplore.ieee.org/document/11217888">[Paper Link]</a></li>
-    <li>Minami Omoto, Kenya Mori, <strong><u>Yuta Yamabata</strong></u></strong>, Emiko Uchiyama, and Gentiane Venture<br>
-      Expressive Robotics for Social Card Games: Designing and Evaluating a Controller for “Old Maid”, in <i>2025 IEEE International Conference on Advanced Robotics and its Social Impacts (ARSO)</i>, 2025<br>
+    <li>Minami Omoto, Kenya Mori, <u>Yuta Yamabata</u>, Emiko Uchiyama, and Gentiane Venture<br>
+      <strong>Expressive Robotics for Social Card Games: Designing and Evaluating a Controller for “Old Maid”</strong><br>
+      in <i>2025 IEEE International Conference on Advanced Robotics and its Social Impacts (ARSO)</i>, 2025<br>
       Acceptance Rate: <strong>66%</strong><br>
       <a href="https://ieeexplore.ieee.org/document/11124993">[Paper Link]</a></li>
   </ul>
 
   <h3>International Workshops</h3>
   <ul>
-    <li><strong><u>Yuta Yamabata</strong></u></strong>, Ayato Kanada, Yasutaka Nakashima, and Motoji Yamamoto<br>
-      Mechanical Model for Storage in an Extendable Robotic Arm, in <i>Workshop on Towards Collaborative Partners: Design, Shared Control, and Robot Learning for Physical Human-Robot Interaction, at 2024 IEEE International Conference on Robotics and Automation (ICRA)</i>, 2024<br>
+    <li><u>Yuta Yamabata</u>, Ayato Kanada, Yasutaka Nakashima, and Motoji Yamamoto<br>
+      <strong>Mechanical Model for Storage in an Extendable Robotic Arm</strong><br>
+      in <i>Workshop on Towards Collaborative Partners: Design, Shared Control, and Robot Learning for Physical Human-Robot Interaction, at 2024 IEEE International Conference on Robotics and Automation (ICRA)</i>, 2024<br>
       <a href="https://www.researchgate.net/publication/396744305_Mechanical_Model_for_Storage_in_an_Extendable_Robotic_Arm">[Paper Link]</a> <a href="https://sites.google.com/view/icra24-physical-hri">[Workshop Page]</a></li>
   </ul>
 
   <h3>Domestic Conference Proceedings (Non-Reviewed)</h3>  
   <ul>
-    <li>元持文葉, <strong><u>山端優太</strong></u></strong>, 森賢哉, 大本みなみ, 内山瑛美子, ベンチャージェンチャン<br>
-      トランプゲームを行うマニピュレータの文字認識による自動化と人間の動作から生成した感情表現動作の開発, <i>第43回日本ロボット学会学術講演会</i>, 2025<br>
+    <li>元持文葉, <u>山端優太</u>, 森賢哉, 大本みなみ, 内山瑛美子, ベンチャージェンチャン<br>
+      <strong>トランプゲームを行うマニピュレータの文字認識による自動化と人間の動作から生成した感情表現動作の開発</strong><br>
+      <i>第43回日本ロボット学会学術講演会</i>, 2025<br>
       <a href="https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202502249866367856">[Paper Link]</a></li>
-    <li><strong><u>山端優太</strong></u></strong>, ベンチャージェンチャン<br>
-      人の関心に基づく個人距離を考慮した自律移動ロボットの経路計画, <i>日本機械学会ロボティクス・メカトロニクス講演会</i>, 2025<br>
+    <li><u>山端優太</u>, ベンチャージェンチャン<br>
+      <strong>人の関心に基づく個人距離を考慮した自律移動ロボットの経路計画</strong><br>
+      <i>日本機械学会ロボティクス・メカトロニクス講演会</i>, 2025<br>
       <a href="https://www.jstage.jst.go.jp/article/jsmermd/2025/0/2025_2P1-I11/_article/-char/ja/">[Paper Link]</a></li>
   </ul>
 
-  <h2>Honors & Awards</h2>
+  </section>
+
+  <section class="content-section" aria-labelledby="awards-title">
+  <h2 id="awards-title">Honors &amp; Awards</h2>
   <ul>
     <li>武藤栄次賞優秀学生賞, Issued by 日本設計工学会 (Japan Society for Design Engineering), 2026<br>
       <a href="https://jsde.or.jp/wp/award/studentaward/">[Award Page]</a></li>
-    <li>海外武者修行奨学金, Issued by 東京大学大学院工学系研究科, 2025<br>
+    <li>海外武者修行奨学金, Issued by 東京大学大学院工学系研究科, 2025<br></li>
     <li>FUTI Global Leadership Award, Issued by 東大友の会 (Friends of UTokyo), 2025<br>
       <a href="https://www.friendsofutokyo.org/en/scholarships-awards/">[Award Page]</a> <a href="https://www.friendsofutokyo.org/en/study-abroad-experience/">[Report]</a></li>
-    <li>Championship & Company Award, Issued by 東京大学魔改造研究会, 2024<br>
+    <li>Championship &amp; Company Award, Issued by 東京大学魔改造研究会, 2024<br></li>
   </ul>
 
-  <h2>Projects</h2>
+  </section>
+
+  <section class="content-section" aria-labelledby="projects-title">
+  <h2 id="projects-title">Projects</h2>
   <ul>
     <li>KIMLAB Halloween Video 2025 - The Story of Tonight (for Robots), 2025<br>
       <a href="https://youtu.be/I7L8w_SM358?si=ftZZvnNVFITv5Z1Z">[Video]</a></li>
@@ -90,5 +119,7 @@
   </ul>
 
 
+  </section>
+  </main>
 </body>
 </html>
