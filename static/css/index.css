@@ -81,51 +81,47 @@ h1, h2, h3, p, li { overflow-wrap: break-word; }
 
 main.page-width { padding-bottom: 64px; }
 .content-section { margin-top: 52px; }
+.content-section h2,
+.content-section h3 {
+  width: fit-content;
+  max-width: 100%;
+}
+
 .content-section h2 {
-  margin: 0 0 24px;
+  margin: 0 0 15px;
   font-size: 1.75rem;
   line-height: 1.25;
   letter-spacing: -.025em;
 }
-.content-section h2::after {
-  content: "";
-  display: block;
-  width: 124px;
-  height: 3px;
-  margin-top: 13px;
-  border-radius: 2px;
-  background: linear-gradient(90deg, var(--blue), #dce7eb);
+/* h3の余白は現在、ブラウザの標準値なので追加します */
+.content-section h3 {
+  margin: 40px 0 5px; /* 上40px・左右0・下10px */
 }
-.content-section h3 { margin: 30px 0 18px; font-size: 1.0625rem; line-height: 1.5; font-weight: 700; }
+/* h2の直後のh3だけは、h2の下余白で間隔を決める */
+.content-section h2 + h3 {
+  margin-top: 0;
+}
+.content-section h2::after,
 .content-section h3::after {
   content: "";
   display: block;
-  width: 600px;
-  height: 2px;
-  margin-top: 1px;
+  width: 100%;
   border-radius: 2px;
+}
+
+.content-section h2::after {
+  height: 3px;
+  margin-top: 5px;
   background: linear-gradient(90deg, var(--blue), #dce7eb);
 }
+
 .content-section p { margin: 0; }
 .about-section p + p { margin-top: 16px; }
-.content-section ul { margin: 0; padding: 0; list-style: none; }
-.content-section li { padding-block: 18px; }
+.content-section ul { margin: 0; padding-left: 2.00em; list-style: disc; }
+.content-section li { padding-block: 10px; }
 .content-section li:first-child { padding-top: 0; }
 .content-section li:last-child { padding-bottom: 0; }
-.content-section li + li { border-top: 1px solid var(--line); }
-/* .content-section li a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  max-width: 100%;
-  margin: 8px 5px 0 0;
-  padding: 5px 12px;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  font-size: .875rem;
-  line-height: 1.5;
-  text-decoration: none;
-} */
+/* .content-section li + li { border-top: 1px solid var(--line); } */
 .content-section li a:hover { border-color: var(--blue); background: #f5f9fb; }
 .publications-section strong u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 
